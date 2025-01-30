@@ -24,6 +24,8 @@
     justify-content: space-between; 
 }
 
+
+
 .section3 {
     min-height: 100vh; 
     background-color: #D9D9D9;
@@ -31,4 +33,77 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+    align-items: center;
+   
 }
+
+.section4 {
+    min-height: 100vh; 
+    background-color: #132B67;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.slideshow-container {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.slideshow-wrapper {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); 
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+
+.mySlides {
+    display: none;
+    padding: 40px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: #132B67;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    text-decoration: none;
+}
+
+.next { right: 0; }
+.prev { left: 0; }
+
+.dot-container { 
+    text-align: center; 
+    padding: 0px; 
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover { background-color: #132B67; }
+
+q { font-style: italic; }
+
+.author { color: #132B67; }
