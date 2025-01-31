@@ -59,3 +59,20 @@ function setSlide(index) {
 
 // Load reviews on page load
 fetchReviews();
+
+
+// modal
+
+function openModal(button) {
+    const card = button.closest('.card');
+    document.getElementById("modalImage").src = card.querySelector('.card-img').src;
+    document.getElementById("modalTitle").textContent = card.querySelector('.card-title').textContent;
+    document.getElementById("modalSubtitle").textContent = card.querySelector('.card-sub-title').textContent;
+    document.getElementById("modalDescription").textContent = card.querySelector('.card-info').textContent;
+    
+    document.getElementById("infoModal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("infoModal").style.display = "none";
+}
