@@ -1,106 +1,25 @@
 .section1 {
     height: 60vh; 
-    background-color: rgba(217, 217, 217, 0.466); /* Turn white later on*/
+    background-color: #d9d9d977; /* Turn white later on */
     color: #132B67;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-}
-.section1-img{
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); 
-    border-radius: 2%;  
-}
-.section1-description {
-    font-size: 18px;
-}
+  }
+
+  
 
 
 
-.section2 {
+
+  .section2 {
     height: 50vh; 
-    background-color: #c6c7c9; /* Turn white later on*/
+    background-color: #c6c7c9; /* Turn white later on */
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-}
+  }
+  
 
 
-.section3 {
-    height: 80vh; 
-    background-color: rgb(134, 134, 134);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Center & Resize Carousel */
-.carousel-container {
-    max-width: 1000px; /* Make it larger */
-    margin: auto;
-    padding: 40px 0; /* Add spacing */
-    text-align: center;
-}
-
-/* Make Images Bigger & Responsive */
-.carousel-item .row img {
-    max-width: 100%;
-    height: 300px; /* Adjust size */
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel-item .row img:hover {
-    transform: scale(1.05);
-}
-
-/* Custom Arrows */
-.custom-prev, .custom-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 50px;
-    font-weight: bold;
-    color: #007bff; /* Blue color */
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    transition: color 0.3s ease-in-out;
-}
-
-.custom-prev {
-    left: -60px; /* Move left */
-}
-
-.custom-next {
-    right: -60px; /* Move right */
-}
-
-.custom-prev:hover, .custom-next:hover {
-    color: #0056b3; /* Darker on hover */
-}
-
-/* Indicators */
-.carousel-indicators button {
-    background-color: #6c757d;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-}
-
-.carousel-indicators .active {
-    background-color: #007bff;
-}
 
