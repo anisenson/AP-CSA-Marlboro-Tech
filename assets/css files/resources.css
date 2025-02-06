@@ -2,18 +2,19 @@ body {
     background-color: #D9d9d9;
     color: #132B67;
 }
+
 .card {
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    border: 0px;
-    color: #132B67 ;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 0px;
+  color: #132B67;
+  transition: transform 0.2s ease-in-out; 
 }
 
-.card-title {
-    font-family: "begum", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.card:hover {
+  transform: scale(1.03); /
 }
+
 
 .card-text {
     font-family: "inter-tight-variable", sans-serif;
