@@ -43,6 +43,15 @@ Light Blue - #52649E
     transform: scaleX(1);
 }
 
+/* Active link with underline */
+.nav-link.active {
+    color: #f8f9fa; /* Optional: change color when active */
+}
+
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
 .navbar-toggler-icon {
     color: white;
 }
@@ -50,7 +59,6 @@ Light Blue - #52649E
 .navbar-brand img {
     width: 80px;
     height: auto;
-    
 }
 
 @media (max-width: 992px) {

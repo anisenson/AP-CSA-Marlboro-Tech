@@ -1,16 +1,4 @@
-.section1 {
-    min-height: 100vh;
-    background-color: #D9D9D9;
-    color: #132B67;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navbar img {
-    box-shadow: none;
-}
-
+/* General Styles */
 img {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -21,10 +9,113 @@ img:hover {
     transform: scale(1.05);
 }
 
+q {
+    font-style: italic;
+}
+
+.author {
+    color: #132B67;
+}
+
+/* Landing Section *//* Landing Section */
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+/* Video background styling */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the video stays behind the content */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the video cover the entire container */
+}
+
+/* Dark overlay for contrast */
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.landing-content {
+    position: relative;
+    z-index: 2; /* Keeps content on top of the video */
+    max-width: 700px;
+}
+
+.landing h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.landing p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.landing-btn {
+    display: inline-block;
+    background: #FCB612;
+    color: #132B67;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.landing-btn:hover {
+    background: #FCB612;
+    transform: scale(1.05);
+}
+
+
+/* Section 1 */
+.section1 {
+    min-height: 100vh;
+    background-color: #D9D9D9;
+    color: #132B67;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .section1-description {
     font-size: 18px;
 }
 
+.navbar img {
+    box-shadow: none;
+}
+
+.section1-img {
+    width: 100%;
+}
+
+/* Section 2 */
 .section2 {
     min-height: 80vh;
     background-color: #132B67;
@@ -34,8 +125,7 @@ img:hover {
     justify-content: space-between;
 }
 
-
-
+/* Section 3 */
 .section3 {
     min-height: 30vh;
     background-color: #D9D9D9;
@@ -44,9 +134,9 @@ img:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
+/* Section 4 */
 .section4 {
     min-height: 70vh;
     background-color: #132B67;
@@ -56,12 +146,13 @@ img:hover {
     justify-content: space-between;
 }
 
+/* Slideshow */
 .slideshow-container {
     position: relative;
     background: #ffffff;
     padding: 20px;
     text-align: center;
-
+    font-size: larger;
 }
 
 .slideshow-wrapper {
@@ -70,10 +161,8 @@ img:hover {
     padding: 20px;
     text-align: center;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
-
 
 .mySlides {
     display: none;
@@ -123,10 +212,7 @@ img:hover {
     background-color: #132B67;
 }
 
-q {
-    font-style: italic;
-}
-
-.author {
-    color: #132B67;
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
