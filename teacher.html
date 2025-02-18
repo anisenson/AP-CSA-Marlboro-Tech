@@ -113,14 +113,14 @@
 
 
 
-    <section class="section2">
+    <section class="section2" id="section2">
         <div class="container">
             <div class="row pt-5 justify-content-center">
                 <div class="col-8">
                     <h1 class="font-main text-center">Class Overview</h1>
                 </div>
                 <div class="col-8 mt-3 text-center">
-                    <a href="#">
+                    <a href="assets/classprocedures.pdf" target="_blank">
                         <img class="img-fluid section2-img mx-auto d-block" src="assets/img/doc1.png">
                     </a>
                 </div>
@@ -141,7 +141,7 @@
 
 
                 <div class="col-lg-12">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form action="process_form.php" method="POST" role="form" class="php-email-form">
                         <div class="row g-1">
                             <div class="col-lg-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
@@ -175,6 +175,40 @@
             </div>
     </section>
 
+    <script>
+        document.querySelector('.php-email-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var form = this;
+            var formData = new FormData(form);
+
+            // Show loading message
+            document.querySelector('.loading').style.display = 'block';
+            document.querySelector('.error-message').style.display = 'none';
+            document.querySelector('.sent-message').style.display = 'none';
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.text())
+                .then(data => {
+                    // Show success or error message based on the response
+                    if (data.includes("Your message has been sent")) {
+                        document.querySelector('.loading').style.display = 'none';
+                        document.querySelector('.sent-message').style.display = 'block';
+                    } else {
+                        document.querySelector('.loading').style.display = 'none';
+                        document.querySelector('.error-message').style.display = 'block';
+                    }
+                })
+                .catch(error => {
+                    document.querySelector('.loading').style.display = 'none';
+                    document.querySelector('.error-message').style.display = 'block';
+                });
+        });
+    </script>
+
 
 
 
@@ -182,12 +216,12 @@
     <footer class="footer font-main">
         <img src="assets/img/APCSA Logo.png" alt="APCSA Logo">
         <div class="footer-links">
-            <a href="#">Marlboro Tech Ed</a>
             <a href="index.html">AP CSA</a>
             <a href="units.html">Course Units</a>
             <a href="teacher.html">About the Teacher</a>
             <a href="aptest.html">AP Test</a>
             <a href="resources.html">Resources</a>
+            <a href="#">Marlboro Tech Ed</a>
         </div>
     </footer>
     <!--End Footer-->

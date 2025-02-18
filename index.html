@@ -33,8 +33,8 @@
 
 <body>
     <!--Navbar-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark font-main">
+    <header class="header fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark font-main">
             <div class="container-fluid">
                 <!-- Logo  -->
                 <a class="navbar-brand" href="index.html">
@@ -85,7 +85,7 @@
         <section class="landing">
             <div class="video-background">
                 <video autoplay loop muted>
-                    <source src="/assets/img/4733-179738669.mp4" type="video/mp4">
+                    <source src="assets\img\background.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="landing-content">
@@ -238,15 +238,51 @@
     <footer class="footer font-main">
         <img src="assets/img/APCSA Logo.png" alt="APCSA Logo">
         <div class="footer-links">
-            <a href="#">Marlboro Tech Ed</a>
             <a href="index.html">AP CSA</a>
             <a href="units.html">Course Units</a>
             <a href="teacher.html">About the Teacher</a>
             <a href="aptest.html">AP Test</a>
             <a href="resources.html">Resources</a>
+            <a href="#">Marlboro Tech Ed</a>
         </div>
     </footer>
     <!--End Footer-->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initially hide the navbar
+            $('.header').hide();
+
+            // Store the height of the landing section
+            var landingHeight = $('.landing').outerHeight();
+
+            // Variables to store previous scroll position
+            var lastScrollTop = 0;
+
+            // On scroll
+            $(window).scroll(function () {
+                var currentScroll = $(this).scrollTop();
+
+                // Show navbar only after scrolling past the landing section
+                if (currentScroll > landingHeight) {
+                    // Scroll down
+                    if (currentScroll > lastScrollTop) {
+                        // If scrolling down, hide the navbar
+                        $('.header').slideDown();
+                    } else {
+                        // If scrolling up, show the navbar
+                        $('.header').slideDown();
+                    }
+                }
+
+                // Update last scroll position
+                lastScrollTop = currentScroll;
+            });
+        });
+    </script>
+
 
     <!-- Bootstrap JavaScript Libraries -->
 

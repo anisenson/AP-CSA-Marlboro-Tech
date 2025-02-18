@@ -1,51 +1,59 @@
 .section1 {
-    min-height: 60vh; 
+    min-height: 70vh;
     background-color: #D9D9D9;
     color: #132B67;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
 }
-.section1-img{
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); 
-    border-radius: 2%;  
+
+.section1-img {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
 }
+
 .section1-description {
     font-size: 18px;
 }
 
 
 
+
 .section2 {
-    min-height: 60vh; 
+    min-height: 60vh;
     background-color: white;
     color: #132B67;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-} 
+    justify-content: space-between;
+}
+
 .section2-img {
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); 
-    border-radius: 2%;    
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 2%;
     transition: transform 0.3s ease-in-out;
 }
 
 .section2-img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
     filter: blur(2px);
 }
 
 
 .section3 {
-    min-height: 70vh; 
+    min-height: 70vh;
     background-color: #132B67;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-/* General Form Styling *//* General Form Styling */
+/* General Form Styling */
+/* General Form Styling */
 .php-email-form {
     background: #fff;
     padding: 20px;
@@ -57,11 +65,13 @@
 
 /* Form Groups - Add Spacing */
 .php-email-form .form-group {
-    margin-bottom: 20px; /* Increased space between inputs */
+    margin-bottom: 20px;
+    /* Increased space between inputs */
 }
 
 .php-email-form .row {
-    margin-bottom: 2px; /* Space between input rows */
+    margin-bottom: 2px;
+    /* Space between input rows */
 }
 
 /* Form Inputs & Textarea */
@@ -98,7 +108,8 @@
     cursor: pointer;
     transition: background 0.3s ease-in-out, transform 0.2s;
     width: 100%;
-    margin-top: 10px; /* Space above the button */
+    margin-top: 10px;
+    /* Space above the button */
 }
 
 .php-email-form button:hover {
@@ -132,9 +143,11 @@
     .php-email-form {
         width: 90%;
     }
+
     .php-email-form .form-group {
         width: 100%;
     }
+
     .php-email-form button {
         font-size: 16px;
         padding: 10px;
