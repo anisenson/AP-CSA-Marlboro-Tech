@@ -76,3 +76,9 @@ function openModal(button) {
 function closeModal() {
     document.getElementById("infoModal").style.display = "none";
 }
+
+
+
+
+
+
