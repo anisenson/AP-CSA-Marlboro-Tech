@@ -203,6 +203,10 @@ h1{
     }
 }
 
+.modal-body img.img-fluid {
+    border: 4px solid #ccc; 
+}
+
 /* modal Styling */
 
 
