@@ -69,7 +69,7 @@ function openModal(button) {
     document.getElementById("modalTitle").textContent = card.querySelector('.card-title').textContent;
     document.getElementById("modalSubtitle").textContent = card.querySelector('.card-sub-title').textContent;
     document.getElementById("modalDescription").textContent = card.querySelector('.card-info').textContent;
-    
+
     document.getElementById("infoModal").style.display = "flex";
 }
 
@@ -78,7 +78,23 @@ function closeModal() {
 }
 
 
+$(document).ready(function () {
+    // Initially hide the navbar
+    $('.header').hide();
 
+    // Store the height of the landing section
+    var landingHeight = $('.landing').outerHeight();
 
+    // On scroll
+    $(window).scroll(function () {
+        var currentScroll = $(this).scrollTop();
 
-
+        if (currentScroll > landingHeight) {
+            // If user scrolls past the landing, show the navbar
+            $('.header').slideDown();
+        } else {
+            // If user scrolls back into the landing, hide the navbar
+            $('.header').slideUp();
+        }
+    });
+});
