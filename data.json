@@ -10,7 +10,7 @@
             "assets/img/Units/1.4.png"
         ],
         "synopsis": "Introduces the basics of Java, including variables, data types (int, double, boolean), and basic output using System.out.println(). Students learn about integer division, type casting, and the importance of syntax.",
-        "examWeight": "This unit accounts for 2.5-5% of the final exam."
+        "examWeight": "2.5-5%"
     },
     {
         "unit": "Unit 2",
@@ -23,7 +23,7 @@
             "assets/img/Units/2.4.png"
         ],
         "synopsis": "Covers object-oriented programming (OOP) fundamentals. Students work with classes, constructors, instance variables, and methods. They learn how to create and use objects from built-in and custom classes",
-        "examWeight": "This unit accounts for 5-7.5% of the final exam."
+        "examWeight": "5-7.5%"
     },
     {
         "unit": "Unit 3",
@@ -36,7 +36,7 @@
             "assets/img/Units/3.4.png"
         ],
         "synopsis": "Focuses on logical operations (&&, ||, !), relational operators (==, !=, <,>), and decision-making with if, if-else, and else-if statements to control program flow.",
-        "examWeight": "This unit accounts for 15-17.5% of the final exam."
+        "examWeight": "15-17.5%"
     },
     {
         "unit": "Unit 4",
@@ -49,7 +49,7 @@
             "assets/img/Units/4.4.png"
         ],
         "synopsis": "Introduces loops (while, for) to execute repetitive tasks efficiently. Students practice writing loops for counting, summing values, and searching data.",
-        "examWeight": "#"
+        "examWeight": "17.5%-22.5%"
     },
     {
         "unit": "Unit 5",
@@ -62,7 +62,7 @@
             "assets/img/Units/5.4.png"
         ],
         "synopsis": "Deepens understanding of OOP by teaching students to design their own classes. Topics include encapsulation (private variables, public methods), constructors, this keyword, and method overloading.",
-        "examWeight": "This unit accounts for 5-7.5% of the final exam."
+        "examWeight": "5-7.5%"
     },
     {
         "unit": "Unit 6",
@@ -75,7 +75,7 @@
             "assets/img/Units/6.4.png"
         ],
         "synopsis": "Explores arrays as data structures for storing multiple values of the same type. Students learn array declaration, initialization, traversal, and manipulation techniques.",
-        "examWeight": "This unit accounts for 10-15% of the final exam."
+        "examWeight": "10-15%"
     },
     {
         "unit": "Unit 7",
@@ -88,7 +88,7 @@
             "assets/img/Units/7.4.png"
         ],
         "synopsis": "Introduces the ArrayList class, which provides dynamic resizing. Students learn methods like .add(), .remove(), .size(), and how to iterate through ArrayLists using loops.",
-        "examWeight": "This unit accounts for 2.5-7.5% of the final exam."
+        "examWeight": "2.5-7.5%"
     },
     {
         "unit": "Unit 8",
@@ -101,7 +101,7 @@
             "assets/img/Units/8.4.png"
         ],
         "synopsis": "Extends knowledge of arrays to two-dimensional arrays, often used to represent grids or tables. Students learn indexing, nested loops for traversal, and modifying 2D arrays.",
-        "examWeight": "This unit accounts for 7.5-10% of the final exam."
+        "examWeight": "7.5-10%"
     },
     {
         "unit": "Unit 9",
@@ -114,7 +114,7 @@
             "assets/img/Units/9.4.png"
         ],
         "synopsis": "Covers the OOP concept of inheritance, allowing a subclass to inherit properties and methods from a superclass. Students explore method overriding and polymorphism.",
-        "examWeight": "This unit accounts for 5-10% of the final exam."
+        "examWeight": "5-10%"
     },
     {
         "unit": "Unit 10",
@@ -127,6 +127,6 @@
             "assets/img/Units/10.4.png"
         ],
         "synopsis": "Introduces recursion as a method where a function calls itself to solve problems. Students analyze base cases, recursive cases, and common problems like factorials and Fibonacci sequences.",
-        "examWeight": "This unit accounts for 5-7.5% of the final exam."
+        "examWeight": "5-7.5%"
     }
 ]

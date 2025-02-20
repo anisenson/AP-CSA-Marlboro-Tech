@@ -102,7 +102,7 @@ function generateModals(units) {
 
     units.forEach((unit, index) => {
         const thumbnails = unit.thumbnails.map(img => `
-            <img src="${img}" class="thumbnail mx-1" style="width: 60px; cursor: pointer;"
+            <img src="${img}" class="thumbnail mx-1"
                 onmouseover="changeMainImage('${img}', 'modal${index}-main-img')">
         `).join("");
 
@@ -111,11 +111,11 @@ function generateModals(units) {
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modal${index}Label">${unit.unit}: ${unit.title}</h5>
+                            <h3 class="modal-title font-main" id="modal${index}Label"><b>${unit.unit}: ${unit.title}</b></h3>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body text-center">
-                            <div class="thumbnail-container d-flex justify-content-center mb-2">
+                            <div class="thumbnail-container d-flex justify-content-center mb-3">
                                 ${thumbnails}
                             </div>
                             <img src="${unit.thumbnails[0]}" id="modal${index}-main-img" class="img-fluid mb-3" alt="${unit.unit}">

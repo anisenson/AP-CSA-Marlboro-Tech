@@ -1,32 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #D9d9d9 ;
+    background-color: #D9d9d9;
 }
 
-main{
+main {
     width: 100%;
     padding: 20px;
 }
 
-h1{
+h1 {
     margin-bottom: 30px;
 }
 
+.text-header {
+    color: #132B67;
+}
 
+/*Card*/
 .card {
-   
     overflow: hidden;
     border: 3px solid #fff;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     position: relative;
     background: #fff;
@@ -49,7 +52,7 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     flex-direction: column;
@@ -91,126 +94,100 @@ h1{
     background: #2452c7;
 }
 
+/*End card*/
 
 
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Make the modal wider */
+
+.modal-dialog {
+    max-width: 950px; /* Increased modal width */
+    width: 95%;
 }
+
+/* Improve modal content styling */
 .modal-content {
-    background: white;
-    padding: 20px;
-    width: 500px;
-    border-radius: 10px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
     text-align: center;
-    position: relative;
-}
-.modal img {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     width: 100%;
-    border-radius: 5px;
-}
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
-.modal-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; 
-
+/* Make the main image fully responsive and larger */
+.modal-body img{
+    width: 80%;
+    height: auto;
+    max-height: 500px; /* Adjust height for better proportions */
+    object-fit: contain; /* Ensures the full image is visible */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-.main-img {
-    width: 75%;
-    transition: opacity 0.3s ease-in-out;
+/* Slight zoom effect on hover */
+.modal-body img:hover {
+    transform: scale(1.02);
 }
 
+/* Thumbnail section improvements */
 .thumbnail-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
+/* Make thumbnails actually bigger */
 .thumbnail {
-    width: 60px;
-    cursor: pointer;
-    margin: 5px 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.thumbnail:hover {
-    opacity: 0.7;
-}
-
-
-.modal-content {
-    height: 50vh; 
-}
-
-.thumbnail {
-    width: 120px; 
-    height: auto;
+    width: 130px !important; /* Force width */
+    height: auto; /* Set a proportional height */
+    object-fit: cover; /* Ensures they don't stretch weirdly */
     cursor: pointer;
     border-radius: 8px;
-    border: 3px solid #ccc; 
-    transition: border-color 0.3s ease;
-    margin: 5px 0;
-
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
+/* Hover effect */
 .thumbnail:hover {
-    border-color: #007bff; 
-}
-
-#modal1-main-img {
-    max-width: 100%; 
-    max-height: 80vh;
-    border: 4px solid #ccc; 
-    border-radius: 10px;
+    border-color: #132B67;
+    transform: scale(1.5);
 }
 
 
-.modal-content {
-    width: 120%; 
-    max-width: 600px;
-    height: auto; 
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+/* Improve text layout */
+.text-start {
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
 }
 
-@media (max-width: 576px) {
-    .modal-content {
-        width: 95%; 
-        max-width: none; 
-    }
+.text-start h6 {
+    font-size: 1.3rem;
+    color: #132B67;
+    margin-bottom: 5px;
 }
 
-.modal-body img.img-fluid {
-    border: 4px solid #ccc; 
-}
-
-/* modal Styling */
-
-
-
-.text-header {
-    color: #132B67 ;
+.text-start p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.7;
 }
