@@ -1,0 +1,132 @@
+[
+    {
+        "unit": "Unit 1",
+        "title": "Primitive Types",
+        "mainImage": "assets/img/Units/Unit 1.png",
+        "thumbnails": [
+            "assets/img/Units/1.1.png",
+            "assets/img/Units/1.2.png",
+            "assets/img/Units/1.3.png",
+            "assets/img/Units/1.4.png"
+        ],
+        "synopsis": "Introduces the basics of Java, including variables, data types (int, double, boolean), and basic output using System.out.println(). Students learn about integer division, type casting, and the importance of syntax.",
+        "examWeight": "This unit accounts for 2.5-5% of the final exam."
+    },
+    {
+        "unit": "Unit 2",
+        "title": "Using Objects",
+        "mainImage": "assets/img/Units/Unit 2.png",
+        "thumbnails": [
+            "assets/img/Units/2.1.png",
+            "assets/img/Units/2.2.png",
+            "assets/img/Units/2.3.png",
+            "assets/img/Units/2.4.png"
+        ],
+        "synopsis": "Covers object-oriented programming (OOP) fundamentals. Students work with classes, constructors, instance variables, and methods. They learn how to create and use objects from built-in and custom classes",
+        "examWeight": "This unit accounts for 5-7.5% of the final exam."
+    },
+    {
+        "unit": "Unit 3",
+        "title": "Boolean Expressions and if Statements",
+        "mainImage": "assets/img/Units/Unit 3.png",
+        "thumbnails": [
+            "assets/img/Units/3.1.png",
+            "assets/img/Units/3.2.png",
+            "assets/img/Units/3.3.png",
+            "assets/img/Units/3.4.png"
+        ],
+        "synopsis": "Focuses on logical operations (&&, ||, !), relational operators (==, !=, <,>), and decision-making with if, if-else, and else-if statements to control program flow.",
+        "examWeight": "This unit accounts for 15-17.5% of the final exam."
+    },
+    {
+        "unit": "Unit 4",
+        "title": "Iteration",
+        "mainImage": "assets/img/Units/Unit 4.png",
+        "thumbnails": [
+            "assets/img/Units/4.1.png",
+            "assets/img/Units/4.2.png",
+            "assets/img/Units/4.3.png",
+            "assets/img/Units/4.4.png"
+        ],
+        "synopsis": "Introduces loops (while, for) to execute repetitive tasks efficiently. Students practice writing loops for counting, summing values, and searching data.",
+        "examWeight": "#"
+    },
+    {
+        "unit": "Unit 5",
+        "title": "Writing Classes",
+        "mainImage": "assets/img/Units/Unit 5.png",
+        "thumbnails": [
+            "assets/img/Units/5.1.png",
+            "assets/img/Units/5.2.png",
+            "assets/img/Units/5.3.png",
+            "assets/img/Units/5.4.png"
+        ],
+        "synopsis": "Deepens understanding of OOP by teaching students to design their own classes. Topics include encapsulation (private variables, public methods), constructors, this keyword, and method overloading.",
+        "examWeight": "This unit accounts for 5-7.5% of the final exam."
+    },
+    {
+        "unit": "Unit 6",
+        "title": "Arrays",
+        "mainImage": "assets/img/Units/Unit 6.png",
+        "thumbnails": [
+            "assets/img/Units/6.1.png",
+            "assets/img/Units/6.2.png",
+            "assets/img/Units/6.3.png",
+            "assets/img/Units/6.4.png"
+        ],
+        "synopsis": "Explores arrays as data structures for storing multiple values of the same type. Students learn array declaration, initialization, traversal, and manipulation techniques.",
+        "examWeight": "This unit accounts for 10-15% of the final exam."
+    },
+    {
+        "unit": "Unit 7",
+        "title": "ArrayLists",
+        "mainImage": "assets/img/Units/Unit 7.png",
+        "thumbnails": [
+            "assets/img/Units/7.1.png",
+            "assets/img/Units/7.2.png",
+            "assets/img/Units/7.3.png",
+            "assets/img/Units/7.4.png"
+        ],
+        "synopsis": "Introduces the ArrayList class, which provides dynamic resizing. Students learn methods like .add(), .remove(), .size(), and how to iterate through ArrayLists using loops.",
+        "examWeight": "This unit accounts for 2.5-7.5% of the final exam."
+    },
+    {
+        "unit": "Unit 8",
+        "title": "2D Arrays",
+        "mainImage": "assets/img/Units/Unit 8.png",
+        "thumbnails": [
+            "assets/img/Units/8.1.png",
+            "assets/img/Units/8.2.png",
+            "assets/img/Units/8.3.png",
+            "assets/img/Units/8.4.png"
+        ],
+        "synopsis": "Extends knowledge of arrays to two-dimensional arrays, often used to represent grids or tables. Students learn indexing, nested loops for traversal, and modifying 2D arrays.",
+        "examWeight": "This unit accounts for 7.5-10% of the final exam."
+    },
+    {
+        "unit": "Unit 9",
+        "title": "Inheritance",
+        "mainImage": "assets/img/Units/Unit 9.png",
+        "thumbnails": [
+            "assets/img/Units/9.1.png",
+            "assets/img/Units/9.2.png",
+            "assets/img/Units/9.3.png",
+            "assets/img/Units/9.4.png"
+        ],
+        "synopsis": "Covers the OOP concept of inheritance, allowing a subclass to inherit properties and methods from a superclass. Students explore method overriding and polymorphism.",
+        "examWeight": "This unit accounts for 5-10% of the final exam."
+    },
+    {
+        "unit": "Unit 10",
+        "title": "Recursion",
+        "mainImage": "assets/img/Units/Unit 10.png",
+        "thumbnails": [
+            "assets/img/Units/10.1.png",
+            "assets/img/Units/10.2.png",
+            "assets/img/Units/10.3.png",
+            "assets/img/Units/10.4.png"
+        ],
+        "synopsis": "Introduces recursion as a method where a function calls itself to solve problems. Students analyze base cases, recursive cases, and common problems like factorials and Fibonacci sequences.",
+        "examWeight": "This unit accounts for 5-7.5% of the final exam."
+    }
+]

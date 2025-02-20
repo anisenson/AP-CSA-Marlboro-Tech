@@ -73,8 +73,8 @@ h1{
 
 
 .card-btn {
-    color: #1f3d47;
-    background: #8fabba;
+    color: white;
+    background: #132B67;
     padding: 10px 20px;
     width: fit-content;
     border-radius: 5px;
@@ -88,7 +88,7 @@ h1{
 }
 
 .card-btn:hover {
-    background: #6d94a8;
+    background: #2452c7;
 }
 
 
@@ -211,3 +211,6 @@ h1{
 
 
 
+.text-header {
+    color: #132B67 ;
+}

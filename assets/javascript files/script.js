@@ -1,3 +1,4 @@
+//review slideshow
 let slideIndex = 0;
 let reviews = [];
 
@@ -59,25 +60,95 @@ function setSlide(index) {
 
 // Load reviews on page load
 fetchReviews();
-
+//End review slideshow
 
 // modal
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("data.json")
+        .then(response => response.json())
+        .then(data => {
+            generateCards(data);
+            generateModals(data);
+        })
+        .catch(error => console.error("Error loading data:", error));
+});
 
-function openModal(button) {
-    const card = button.closest('.card');
-    document.getElementById("modalImage").src = card.querySelector('.card-img').src;
-    document.getElementById("modalTitle").textContent = card.querySelector('.card-title').textContent;
-    document.getElementById("modalSubtitle").textContent = card.querySelector('.card-sub-title').textContent;
-    document.getElementById("modalDescription").textContent = card.querySelector('.card-info').textContent;
+function generateCards(units) {
+    const container = document.getElementById("cardContainer");
+    container.innerHTML = ""; // Clear existing content
 
-    document.getElementById("infoModal").style.display = "flex";
+    units.forEach((unit, index) => {
+        const cardHTML = `
+            <div class="col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="${unit.mainImage}" class="card-img img-fluid" alt="${unit.unit}" />
+                    <div class="card-body">
+                        <h1 class="card-title">${unit.unit}</h1>
+                        <p class="card-sub-title">${unit.title}</p>
+                        <button class="card-btn" data-bs-toggle="modal" data-bs-target="#modal${index}">
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+        container.innerHTML += cardHTML;
+    });
 }
 
-function closeModal() {
-    document.getElementById("infoModal").style.display = "none";
+function generateModals(units) {
+    const modalContainer = document.getElementById("modalContainer");
+    modalContainer.innerHTML = ""; // Clear existing content
+
+    units.forEach((unit, index) => {
+        const thumbnails = unit.thumbnails.map(img => `
+            <img src="${img}" class="thumbnail mx-1" style="width: 60px; cursor: pointer;"
+                onmouseover="changeMainImage('${img}', 'modal${index}-main-img')">
+        `).join("");
+
+        const modalHTML = `
+            <div class="modal fade" id="modal${index}" tabindex="-1" aria-labelledby="modal${index}Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal${index}Label">${unit.unit}: ${unit.title}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="thumbnail-container d-flex justify-content-center mb-2">
+                                ${thumbnails}
+                            </div>
+                            <img src="${unit.thumbnails[0]}" id="modal${index}-main-img" class="img-fluid mb-3" alt="${unit.unit}">
+                        </div>
+
+                        <!-- Synopsis Section -->
+                        <div class="text-start">
+                            <h6><b>Synopsis:</b></h6>
+                            <p>${unit.synopsis}</p>
+                        </div>
+
+                        <!-- Exam Weight Section -->
+                        <div class="text-start">
+                            <h6><b>Exam Weight:</b></h6>
+                            <p>This unit accounts for <strong>${unit.examWeight}</strong> of the final exam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        modalContainer.innerHTML += modalHTML;
+    });
 }
 
+function changeMainImage(imgSrc, imgId) {
+    document.getElementById(imgId).src = imgSrc;
+}
 
+//End modal
+
+
+
+//Navbar
 $(document).ready(function () {
     // Initially hide the navbar
     $('.header').hide();
@@ -98,3 +169,4 @@ $(document).ready(function () {
         }
     });
 });
+//end navbar
