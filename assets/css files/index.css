@@ -17,11 +17,12 @@ q {
     color: #132B67;
 }
 
-.navbar{
+.navbar {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
 
 }
-/* Landing Section *//* Landing Section */
+
+/* Landing Section */
 .landing {
     height: 100vh;
     display: flex;
@@ -41,16 +42,15 @@ q {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensures the video stays behind the content */
+    z-index: -1;
 }
 
 video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Makes the video cover the entire container */
+    object-fit: cover;
 }
 
-/* Dark overlay for contrast */
 .landing::before {
     content: "";
     position: absolute;
@@ -58,13 +58,13 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .landing-content {
     position: relative;
-    z-index: 2; /* Keeps content on top of the video */
+    z-index: 2;
     max-width: 700px;
 }
 
@@ -216,7 +216,6 @@ video {
     background-color: #132B67;
 }
 
-/* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }

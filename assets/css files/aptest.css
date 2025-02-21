@@ -7,11 +7,6 @@
   justify-content: space-between;
 }
 
-
-
-
-
-
 .section2 {
   height: 50vh;
   background-color: white;
@@ -19,9 +14,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
-
-
 
 body {
   background-color: #D9d9d9;

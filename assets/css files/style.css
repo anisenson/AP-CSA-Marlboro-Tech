@@ -7,11 +7,7 @@ Dark Blue - #132B67
 Yellow/Gold - #FCB612
 Light Blue - #52649E
 
-
-
 */
-
-
 
 /* Navbar */
 .navbar {
@@ -48,7 +44,7 @@ Light Blue - #52649E
 
 /* Active link with underline */
 .nav-link.active {
-    color: #f8f9fa; /* Optional: change color when active */
+    color: #f8f9fa; 
 }
 
 .nav-link.active::after {
@@ -71,8 +67,6 @@ Light Blue - #52649E
         justify-content: center;
     }
 }
-
-
 
 /* Footer */
 .footer {
@@ -128,7 +122,6 @@ Light Blue - #52649E
 .footer-links a:hover::after {
     transform: scaleX(1);
 }
-
 
 /* Font */
 .font-main {

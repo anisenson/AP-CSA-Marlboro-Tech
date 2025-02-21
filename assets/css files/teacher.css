@@ -5,9 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Center vertically */
     align-items: center;
-    /* Center horizontally */
 }
 
 .section1-img {
@@ -18,9 +16,6 @@
 .section1-description {
     font-size: 18px;
 }
-
-
-
 
 .section2 {
     min-height: 60vh;
@@ -53,7 +48,6 @@
 }
 
 /* General Form Styling */
-/* General Form Styling */
 .php-email-form {
     background: #fff;
     padding: 20px;
@@ -66,12 +60,10 @@
 /* Form Groups - Add Spacing */
 .php-email-form .form-group {
     margin-bottom: 20px;
-    /* Increased space between inputs */
 }
 
 .php-email-form .row {
     margin-bottom: 2px;
-    /* Space between input rows */
 }
 
 /* Form Inputs & Textarea */

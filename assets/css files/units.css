@@ -97,26 +97,9 @@ h1 {
 /*End card*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Make the modal wider */
-
+/* Modal */
 .modal-dialog {
-    max-width: 950px; /* Increased modal width */
+    max-width: 950px;
     width: 95%;
 }
 
@@ -131,12 +114,11 @@ h1 {
 }
 
 /* Make the main image fully responsive and larger */
-.modal-body img{
+.modal-body img {
     width: 70%;
     height: auto;
-    max-height: 500px; /* Adjust height for better proportions */
-    object-fit: contain; /* Ensures the full image is visible */
-    border-radius: 12px;
+    max-height: 500px;
+    object-fit: contain;/ border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
@@ -157,9 +139,9 @@ h1 {
 
 /* Make thumbnails actually bigger */
 .thumbnail {
-    width: 130px !important; /* Force width */
-    height: auto; /* Set a proportional height */
-    object-fit: cover; /* Ensures they don't stretch weirdly */
+    width: 130px !important;
+    height: auto;
+    object-fit: cover;
     cursor: pointer;
     border-radius: 8px;
     border: 2px solid #ccc;
@@ -171,7 +153,6 @@ h1 {
     border-color: #132B67;
     transform: scale(1.5);
 }
-
 
 /* Improve text layout */
 .text-start {

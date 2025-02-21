@@ -1,6 +1,6 @@
 body {
-    background-color: #D9d9d9;
-    color: #132B67;
+  background-color: #D9d9d9;
+  color: #132B67;
 }
 
 .card {
@@ -8,51 +8,53 @@ body {
   border-radius: 10px;
   border: 0px;
   color: #132B67;
-  transition: transform 0.2s ease-in-out; 
+  transition: transform 0.2s ease-in-out;
 }
 
 .card:hover {
-  transform: scale(1.03); /
+  transform: scale(1.03);/
 }
 
-
 .card-text {
-    font-family: "inter-tight-variable", sans-serif;
+  font-family: "inter-tight-variable", sans-serif;
 
 }
 
 .btn {
-    min-width: 130px;
-    font-family: "inter-tight-variable", sans-serif;
-    height: 40px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    z-index: 0;
-    background: #fff;
-    overflow: hidden;
-    border: 2px solid #132b67;
-    color: #132b67;
-  }
-  .btn:hover {
-    color: #fff;
-  }
-  .btn:hover:after {
-    height: 100%;
-  }
-  .btn:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    left: 0;
-    top: 0;
-    height: 0;
-    width: 100%;
-    background: #132b67;
-  }
+  min-width: 130px;
+  font-family: "inter-tight-variable", sans-serif;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #132b67;
+  color: #132b67;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover:after {
+  height: 100%;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: #132b67;
+}
