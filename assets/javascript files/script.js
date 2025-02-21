@@ -79,13 +79,13 @@ function generateCards(units) {
 
     units.forEach((unit, index) => {
         const cardHTML = `
-            <div class="col-md-6 col-sm-12">
-                <div class="card">
-                    <img src="${unit.mainImage}" class="card-img img-fluid" alt="${unit.unit}" />
-                    <div class="card-body">
-                        <h1 class="card-title">${unit.unit}</h1>
-                        <p class="card-sub-title">${unit.title}</p>
-                        <button class="card-btn" data-bs-toggle="modal" data-bs-target="#modal${index}">
+            <div class="col-md-6 col-lg-6 col-sm-12">
+                <div class="card h-100 shadow-sm">
+                    <img src="${unit.mainImage}" class="card-img-top" alt="${unit.unit}" />
+                    <div class="card-body text-center">
+                        <h2 class="card-title">${unit.unit}</h2>
+                        <p class="card-text">${unit.title}</p>
+                        <button class="btn card-btn" data-bs-toggle="modal" data-bs-target="#modal${index}">
                             More Info
                         </button>
                     </div>
@@ -102,35 +102,35 @@ function generateModals(units) {
 
     units.forEach((unit, index) => {
         const thumbnails = unit.thumbnails.map(img => `
-            <img src="${img}" class="thumbnail mx-1"
+            <img src="${img}" class="thumbnail img-thumbnail mx-1" style="width: 80px; cursor: pointer;"
                 onmouseover="changeMainImage('${img}', 'modal${index}-main-img')">
         `).join("");
+        
 
         const modalHTML = `
-            <div class="modal fade" id="modal${index}" tabindex="-1" aria-labelledby="modal${index}Label" aria-hidden="true">
-                <div class="modal-dialog">
+            <div class="modal fade font-alt" id="modal${index}" tabindex="-1" aria-labelledby="modal${index}Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title font-main" id="modal${index}Label"><b>${unit.unit}: ${unit.title}</b></h3>
+                            <h2 class="modal-title font-main" id="modal${index}Label">${unit.unit}: ${unit.title}</h2>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body text-center">
-                            <div class="thumbnail-container d-flex justify-content-center mb-3">
+                        <div class="modal-body">
+                            <div class="text-center mb-3">
+                                <img src="${unit.thumbnails[0]}" id="modal${index}-main-img" class="img-fluid rounded shadow" style="max-height: 400px; object-fit: contain;">
+                            </div>
+                            <div class="d-flex justify-content-center flex-wrap">
                                 ${thumbnails}
                             </div>
-                            <img src="${unit.thumbnails[0]}" id="modal${index}-main-img" class="img-fluid mb-3" alt="${unit.unit}">
-                        </div>
-
-                        <!-- Synopsis Section -->
-                        <div class="text-start">
-                            <h6><b>Synopsis:</b></h6>
-                            <p>${unit.synopsis}</p>
-                        </div>
-
-                        <!-- Exam Weight Section -->
-                        <div class="text-start">
-                            <h6><b>Exam Weight:</b></h6>
-                            <p>This unit accounts for <strong>${unit.examWeight}</strong> of the final exam.</p>
+                            <hr>
+                            <div>
+                                <h5><b>Synopsis:</b></h5>
+                                <p>${unit.synopsis}</p>
+                            </div>
+                            <div>
+                                <h5><b>Exam Weight:</b></h5>
+                                <p>This unit accounts for <strong>${unit.examWeight}</strong> of the final exam.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
