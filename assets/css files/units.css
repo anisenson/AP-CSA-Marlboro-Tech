@@ -132,7 +132,7 @@ h1 {
 
 /* Make the main image fully responsive and larger */
 .modal-body img{
-    width: 80%;
+    width: 70%;
     height: auto;
     max-height: 500px; /* Adjust height for better proportions */
     object-fit: contain; /* Ensures the full image is visible */
@@ -181,13 +181,13 @@ h1 {
 }
 
 .text-start h6 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #132B67;
     margin-bottom: 5px;
 }
 
 .text-start p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #333;
     line-height: 1.7;
 }
