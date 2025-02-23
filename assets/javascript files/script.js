@@ -105,7 +105,7 @@ function generateModals(units) {
             <img src="${img}" class="thumbnail img-thumbnail mx-1" style="width: 80px; cursor: pointer;"
                 onmouseover="changeMainImage('${img}', 'modal${index}-main-img')">
         `).join("");
-        
+
 
         const modalHTML = `
             <div class="modal fade font-alt" id="modal${index}" tabindex="-1" aria-labelledby="modal${index}Label" aria-hidden="true">
@@ -174,3 +174,22 @@ $(document).ready(function () {
 });
 
 //end navbar
+
+//back to top button
+$(document).ready(function () {
+    var backToTop = $('#backToTop');
+
+    // Show or hide the button based on scroll position
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) { // Show after scrolling 300px
+            backToTop.addClass('show').removeClass('hide');
+        } else {
+            backToTop.addClass('hide').removeClass('show');
+        }
+    });
+
+    // Scroll to top when clicked
+    backToTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 300);
+    });
+});
