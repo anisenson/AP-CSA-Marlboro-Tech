@@ -156,17 +156,21 @@ $(document).ready(function () {
     // Store the height of the landing section
     var landingHeight = $('.landing').outerHeight();
 
-    // On scroll
+    // Show navbar when clicking "Learn More" button
+    $('.landing-btn').click(function () {
+        $('.header').slideDown();
+    });
+
+    // On scroll, toggle navbar visibility
     $(window).scroll(function () {
         var currentScroll = $(this).scrollTop();
 
         if (currentScroll > landingHeight) {
-            // If user scrolls past the landing, show the navbar
             $('.header').slideDown();
         } else {
-            // If user scrolls back into the landing, hide the navbar
             $('.header').slideUp();
         }
     });
 });
+
 //end navbar
